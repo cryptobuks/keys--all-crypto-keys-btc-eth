@@ -9,7 +9,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 @else
-    <div class="mb-4" style="height: 100px; border:1px solid black;">
+    <div class="mb-4" style="height:120px; border:1px solid black;">
         key-page-top
     </div>
 @endif

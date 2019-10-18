@@ -2,13 +2,25 @@
 
 namespace Tests;
 
+use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Spatie\Snapshots\MatchesSnapshots;
-use Illuminate\Contracts\Console\Kernel;
 
 abstract class TestCase extends BaseTestCase
 {
     use MatchesSnapshots;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->settingUp();
+    }
+
+    public function settingUp()
+    {
+        //
+    }
 
     protected function getSnapshotDirectory(): string
     {
